@@ -12,7 +12,10 @@ let day = date.getDay();
 
 let addZone = hours >= 12 ? "PM" : "AM";
 seconds = seconds <= 9 ? "0" + seconds : seconds;
-console.log(seconds);
+min = min <= 9 ? "0" + min : min;
+hours = hours <= 9 ? "0" + hours : hours;
+// console.log(seconds, 'Seconds');
+// console.log(min, 'Minutes');
 
 if (seconds >= date.getSeconds(9)) {
 }
@@ -29,4 +32,4 @@ let daylist = [
 ];
 console.log("Today is" + " " + daylist[day]);
 
-console.log(hours + ":" + min + ":" + seconds + " " + addZone);
+console.log('Current Time is', hours + ":" + min + ":" + seconds + " " + addZone);
