@@ -11,6 +11,7 @@ let seconds = date.getSeconds();
 let day = date.getDay();
 
 let addZone = hours >= 12 ? "PM" : "AM";
+hours = hours >=12 ? hours - 12 : hours;
 seconds = seconds <= 9 ? "0" + seconds : seconds;
 min = min <= 9 ? "0" + min : min;
 hours = hours <= 9 ? "0" + hours : hours;
